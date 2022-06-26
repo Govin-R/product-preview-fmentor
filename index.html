@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+		#product-img{
+			width:100%;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			content:url('./images/image-product-mobile.jpg');
+			border-radius: 1rem 1rem 0 0;
+			
+		}
+
+		#container{
+			padding:1rem;	
+			height:100vh;
+		}
+
+		#textside{
+			background-color:rgb(220 990 89);
+			padding:2rem;
+			border-radius:0 0 1rem 1rem;
+		}
+		#perfume{
+			margin:0;
+			border:0;
+		}
+
+		#tsmoney h3{
+			font-size:2rem;
+			margin:0;
+		}
+		#tsmoney h5{
+			margin:0;
+			padding:1rem;
+		}
+		#tsmoney{
+			display:flex;
+			align-items:center;
+			justify-content:start;
+			height:max-content;
+			margin:0;
+			padding:0;
+		}
+		#tsp{
+			margin:0;
+			border:0;
+			padding: 0.5rem 0;
+		}
+		#tsh{
+			margin:0;
+			padding:1rem 0;
+		}
+
+		@media(min-width:590px){
+				
+
+		}
+  </style>
+</head>
+<body>
+	<div id="container">
+		<img alt="image-product" id="product-img"/>
+		
+		<div id="textside">
+
+			<h4 id=perfume> PERFUME</h4>
+			<h1 id="tsh">Gabrielle Essence Eau De Parfum</h1>
+			<p id="tsp">
+ 					 A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+					Perfumer-Creator for the House of CHANEL.</p>
+			<section id="tsmoney">
+			<h3>$149.99<h3><h5><del>$169.99</del></h5></section>
+			<button id="tsb"><img src="./images/icon-cart.svg"> Add to Cart</button>
+	</div></div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
